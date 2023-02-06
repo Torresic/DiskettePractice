@@ -1,0 +1,154 @@
+:root {
+    --primary: #FFAFD2;
+    --secondary: #f6c4de;
+    --primary-variant: #ea899a;
+    --primary-variant-darker: #bc86a5;
+    --background-color: #FEC9E7;
+    --barbie-color: #E12D89;
+    --main-gradient: linear-gradient(to right, #fff, #e3d9d4 75%);
+}
+
+body, html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: var(--background-color);
+    box-sizing: border-box;
+}
+
+.disketteContainer {
+    background: transparent;
+    filter: drop-shadow(-12px 8px 20px var(--primary-variant-darker));
+    -webkit-filter: drop-shadow(-12px 8px 20px var(--primary-variant-darker));
+}
+
+.diskette {
+    height: 400px;
+    width: 370px;
+    background: var(--primary);
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    clip-path: polygon(0 0, 100% 0, 95% 0, 100% 7%, 100% 100%, 0 100%);
+}
+
+.upperPart {
+    height: 140px;
+    padding-left: 35px;
+    display: flex;
+}
+
+.innerContainer {
+    display: flex;
+    justify-content: flex-end;
+    background: var(--primary-variant);
+    padding-right: 2px;
+    height: 100%;
+    width: 270px;
+    border-radius: 0 0 13px 13px;
+    -webkit-border-radius: 0 0 13px 13px;
+    -moz-border-radius: 0 0 13px 13px;
+    -ms-border-radius: 0 0 13px 13px;
+    -o-border-radius: 0 0 13px 13px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.innerElement {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+    height: 97%;
+    width: 75%;
+    background: var(--main-gradient);
+    border-radius: 0 0 13px 13px;
+}
+
+.innerSquare {
+    background: var(--primary-variant);
+    height: 80%;
+    width: 25%;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    box-shadow: -4px 5px 5px 0px var(--primary-variant-darker) inset;
+}
+
+/* Diskette Lower Part */
+
+.lowerPart {
+    box-sizing: border-box;
+    gap: 5px;
+    padding-inline: 5px;
+    margin-top: 60px;
+    display: flex;
+    height: 200px;
+    align-items: end;
+}
+
+.lowerSquare {
+    height: 25px;
+    width: 25px;
+    margin-bottom: 10px;
+    background: var(--primary-variant);
+    box-shadow: -4px 5px 5px 0px var(--primary-variant-darker) inset;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.middleContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    max-width: 100%;
+}
+
+.middleUpperContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 5px;
+    flex: 1;
+    background: var(--secondary) url("barbie.png") no-repeat center;
+
+    background-size: contain;
+    border-radius: 7px 7px 0 0;
+    -webkit-border-radius: 7px 7px 0 0;
+    -moz-border-radius: 7px 7px 0 0;
+    -ms-border-radius: 7px 7px 0 0;
+    -o-border-radius: 7px 7px 0 0;
+    box-shadow: -4px 5px 5px 0px var(--primary-variant-darker) inset;
+
+}
+
+.line {
+    height: 2px;
+    width: 95%;
+    background: var(--primary);
+    mix-blend-mode: darken;
+}
+
+.middleLowerContainer {
+    height: 35px;
+    background: var(--primary-variant);
+}
+
+.credits {
+    margin-top: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    color: var(--barbie-color);
+    text-align: center;
+    font-weight: 100;
+}
