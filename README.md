@@ -5,6 +5,6 @@ EOI-FRONTEND-BOOTCAMP-2023
 
 # Class practice day 06/02/2023
 
-Draw a floppy disk using only css.
+Draw a floppy disk using css only.
 
 
