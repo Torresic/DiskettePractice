@@ -1,11 +1,11 @@
 :root {
-    --primary: #FFAFD2;
-    --secondary: #f6c4de;
-    --primary-variant: #ea899a;
-    --primary-variant-darker: #bc86a5;
-    --background-color: #FEC9E7;
-    --barbie-color: #E12D89;
+    --primary: #00ffb3;
+    --secondary: #8be7c1;
+    --primary-variant: #196b5d;
+    --primary-variant-darker: #045e38;
+    --background-color: linear-gradient(90deg, rgba(0,191,143,1) 0%, rgba(0,21,16,1) 100%);
     --main-gradient: linear-gradient(to right, #fff, #e3d9d4 75%);
+    --led-effect: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px var(--primary), 0 0 30px var(--primary), 0 0 40px var(--primary), 0 0 55px var(--primary), 0 0 75px var(--primary);
 }
 
 body, html {
@@ -13,9 +13,13 @@ body, html {
     justify-content: center;
     align-items: center;
     height: 100%;
-    background: var(--background-color);
     box-sizing: border-box;
 }
+
+body {
+    background: var(--background-color);
+}
+
 
 .disketteContainer {
     background: transparent;
@@ -120,15 +124,15 @@ body, html {
     gap: 25px;
     padding-bottom: 5px;
     flex: 1;
-    background: var(--secondary) url("barbie.png") no-repeat center;
-
-    background-size: contain;
+    background: var(--secondary) url("lion.png")no-repeat center;
+    background-size: 120px;
     border-radius: 7px 7px 0 0;
     -webkit-border-radius: 7px 7px 0 0;
     -moz-border-radius: 7px 7px 0 0;
     -ms-border-radius: 7px 7px 0 0;
     -o-border-radius: 7px 7px 0 0;
     box-shadow: -4px 5px 5px 0px var(--primary-variant-darker) inset;
+    mix-blend-mode: difference;
 
 }
 
@@ -145,10 +149,8 @@ body, html {
 }
 
 .credits {
-    margin-top: 40px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
-    color: var(--barbie-color);
+    color: #FFFFFF;
+    text-shadow: var(--led-effect);
     text-align: center;
-    font-weight: 100;
+    margin-top: 50px;
 }
